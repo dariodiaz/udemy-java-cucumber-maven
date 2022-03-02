@@ -3,3 +3,6 @@
 .classpath
 .project
 .settings
+chromedriver
+chromedriver-96
+target

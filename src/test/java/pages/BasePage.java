@@ -27,10 +27,10 @@ public class BasePage {
         capabilities.setCapability("version", "latest");
         // instantiates a remote WebDriver object with your desired capabilities
         try {
-            System.setProperty("webdriver.chrome.driver", "../../../chromedriver");
+            System.setProperty("webdriver.chrome.driver", "chromedriver");
             driver = new ChromeDriver();
         } catch (IllegalStateException e) {
-            System.setProperty("webdriver.chrome.driver", "../../../chromedriver");
+            System.setProperty("webdriver.chrome.driver", "chromedriver");
             driver = new ChromeDriver();
         }
         wait = new WebDriverWait(driver, 10);
